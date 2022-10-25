@@ -55,7 +55,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1> 
-                <button type="button" class="hero-button">Замовити послугу</button>
+                <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
             </div>
            </section>
         <!-- Наші переваги -->
@@ -109,15 +109,24 @@
                 <h2 class="section-title">Чим ми займаємося</h2>                
                 <ul class="list whatwedo-container">
                     <li>
-                        <a> <img src="./images/keyboard.jpg" alt="Розробка алгоритмів" width="370">
+                        <a class="whatwedo-list"> <img src="./images/keyboard.jpg" alt="Десктопні додатки" width="370">
+                            <div class="whatwedo-box">
+                                <h3 class="whatwedo-text">десктопні додатки</h3>
+                            </div>
                         </a>
                     </li>
                     <li>
-                        <a> <img src="./images/mobile.jpg" alt="Розробка мобільних додатків" width="370">
+                        <a class="whatwedo-list"> <img src="./images/mobile.jpg" alt="Мобільні додатки" width="370">
+                            <div class="whatwedo-box">
+                                <h3 class="whatwedo-text">мобільні додатки</h3>
+                            </div>
                         </a>
                     </li>
                     <li>
-                        <a> <img src="./images/tablet.jpg" alt="Дизайн додатків" width="370">
+                        <a class="whatwedo-list"> <img src="./images/tablet.jpg" alt="Дизайнерські рішення" width="370">
+                            <div class="whatwedo-box">
+                                <h3 class="whatwedo-text">дизайнерські рішення</h3>
+                            </div>
                         </a>
                     </li>                                      
                 </ul>
@@ -415,5 +424,19 @@
 
         </div>      
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="close-button" data-modal-close>
+                <!-- <div class="close-button-container"> -->
+                    <svg class="close-button-icon" width="30" height="30">
+                        <use href="./images/symbol-defs.svg#close">
+                        </use>
+                    </svg>
+                <!-- </div>                 -->
+                <!-- <span>+</span> -->
+            </button>
+        </div>
+    </div>
+<script src="./js/modal.js"></script>
 </body>
 </html>
